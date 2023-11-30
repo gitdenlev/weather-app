@@ -1,23 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Vite App</title>
   </head>
   <body>
-  
-     
-      <div class="container">
-        <div class="weather__container">
-          
+    <div class="container">
+      <div class="input__container">
+        <input type="text" placeholder="London" id="js-input" />
+      </div>
+      <div class="img__container">
+        <img
+          class="main__img"
+          src="./free-icon-weather-7345386.png"
+          alt="icon-weather"
+          width="200px"
+        />
+      </div>
+      <div class="date__info-container">
+        <span>Sunday</span>
+        <div class="line"></div>
+        <span>Nov 14</span>
+      </div>
+      <div class="main__info-container">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          "
+        >
+          <h1>24°C</h1>
+        </div>
+        <h3>Heavy rain</h3>
+        <div class="under__line"></div>
+      </div>
+      <div class="grid__icons-container">
+        <div
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <img src="./icons/gps-device-svgrepo-com.svg" alt="" />
+          <span style="margin-left: 10px">3.7 km/h <br />Wind</span>
+        </div>
+        <div
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <img src="./icons/clouds-svgrepo-com.svg" alt="" />
+          <span style="margin-left: 10px">74%<br />Clouds</span>
+        </div>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 15px;
+          "
+        >
+          <img src="./icons/thermometer-temperature-svgrepo-com.svg" alt="" />
+          <span style="margin-left: 10px">1010 mbar<br />Pressure</span>
+        </div>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 15px;
+          "
+        >
+          <img src="./icons/water-fee-svgrepo-com.svg" alt="" />
+          <span style="margin-left: 10px">83%<br />Humidity</span>
+        </div>
       </div>
     </div>
-  
 
     <script type="module" src="./js/images.js"></script>
     <script type="module" src="./js/weather.js"></script>
-    
   </body>
 </html>
